@@ -1,0 +1,12 @@
+.root {
+  height: calc(100vh - 178px);
+  color: 'primary.900';
+  background-color: backgroundColor;
+  display: flex;
+}
+
+.content {
+  overflow-y: auto;
+  flex: 1;
+  flex-direction: column;
+}
