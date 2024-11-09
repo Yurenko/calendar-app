@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 72px;
+  height: 24px;
+}
+
+.itemList {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 0;
+}
+
+.item {
+  padding: 0;
+}

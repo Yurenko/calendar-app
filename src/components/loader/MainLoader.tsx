@@ -4,7 +4,7 @@ import styles from '~/components/loader/MainLoader.module.css'
 
 const MainLoader = () => {
   return (
-    <Box>
+    <Box className={styles.wrapper}>
       <Box className={styles.loader} />
     </Box>
   )

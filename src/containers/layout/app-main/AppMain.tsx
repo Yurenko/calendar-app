@@ -19,7 +19,7 @@ const AppMain = () => {
     setTimeout(() => {
       dispatch(setLoading(false))
     }, 500)
-  }, [])
+  }, [dispatch])
 
   if (loader.loading) {
     return <MainLoader />
