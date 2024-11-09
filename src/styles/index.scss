@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +16,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  margin: 24px auto;
+  margin: 24px auto 0;
   max-width: 1128px;
 }

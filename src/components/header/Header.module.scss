@@ -1,0 +1,69 @@
+@import '~/styles/variables';
+
+.wrapper {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px $red-pink-transparent solid;
+
+  ul {
+    padding: 0;
+    li {
+      padding: 0;
+    }
+  }
+}
+
+.logo {
+  width: 72px;
+  height: 24px;
+}
+
+.itemList {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 0;
+}
+
+.item {
+  padding: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.currentPathName {
+  position: relative;
+  display: block;
+}
+
+.pathName::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: $red-pink;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+.currentPathName::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $red-pink;
+}
+.pathName:hover::before,
+.pathName:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}

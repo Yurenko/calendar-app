@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 
-import styles from '~/components/loader/MainLoader.module.css'
+import styles from '~/components/loader/MainLoader.module.scss'
 
 const MainLoader = () => {
   return (

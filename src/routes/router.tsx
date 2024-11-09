@@ -6,10 +6,13 @@ import {
 } from 'react-router-dom'
 
 import App from '~/App'
-import Calendar from '~/components/calendar/Calendar'
+import Calendar from '~/pages/calendar/Calendar'
 import AppContent from '~/containers/app-content/AppContent'
 import { routes } from '~/routes/constants'
 import { errorRoutes } from '~/routes/constants/errorRoutes'
+import Events from '~/pages/events/Events'
+import Faq from '~/pages/faq/Faq'
+import Main from '~/pages/main/Main'
 
 export const routerConfig = (
   <Route
@@ -18,7 +21,10 @@ export const routerConfig = (
     path={routes.main.route}
   >
     <Route element={<AppContent />}>
+      <Route path={routes.main.route} element={<Main />} />
+      <Route path={routes.events.route} element={<Events />} />
       <Route element={<Calendar />} index />
+      <Route path={routes.faq.route} element={<Faq />} />
     </Route>
   </Route>
 )

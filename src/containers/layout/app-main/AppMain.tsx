@@ -8,7 +8,7 @@ import { setLoading } from '~/redux/app/appSlice'
 import { selectAppSlice } from '~/redux/app/appSelectors'
 import MainLoader from '~/components/loader/MainLoader'
 
-import styles from '~/containers/layout/app-main/AppMain.module.css'
+import styles from '~/containers/layout/app-main/AppMain.module.scss'
 
 const AppMain = () => {
   const loader = useAppSelector(selectAppSlice)
@@ -18,7 +18,7 @@ const AppMain = () => {
   useEffect(() => {
     setTimeout(() => {
       dispatch(setLoading(false))
-    }, 500)
+    }, 1000)
   }, [dispatch])
 
   if (loader.loading) {
