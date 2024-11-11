@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  width: 360px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: $black;
+}
+
+.titleEvent {
+  font-weight: 500;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.titleBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.listEvents {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chip {
+  span {
+    padding: 0;
+  }
+}

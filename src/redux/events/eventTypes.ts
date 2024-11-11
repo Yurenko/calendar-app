@@ -1,10 +1,14 @@
+export interface MockData {
+  [key: string]: Events[]
+}
+
 export interface Events {
   date: string
   title: string
   description: string
   location: string
-  startTime: Date
-  type: EVENT_TYPE
+  startTime: string
+  type: string
 }
 
 export enum EVENT_TYPE {

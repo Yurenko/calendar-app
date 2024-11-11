@@ -2,10 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { RouterProvider } from 'react-router-dom'
+import 'react-calendar/dist/Calendar.css'
 
 import { router } from '~/routes/router'
-import './styles/index.scss'
 import { store } from '~/redux/store'
+import './styles/index.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

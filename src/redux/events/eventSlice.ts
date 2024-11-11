@@ -1,29 +1,26 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
-import { Events } from '~/redux/events/eventTypes'
+import { mockData } from '~/constants/mock-data'
+import { Events, MockData } from '~/redux/events/eventTypes'
 
 interface eventState {
-  events: Events[]
+  events: MockData
   loading: boolean
 }
 
 const initialState: eventState = {
-  events: [],
+  events: mockData,
   loading: true
 }
 
 export const eventsSlice = createSlice({
   name: 'events',
   initialState,
-  reducers: {
-    setEvents(state, action: PayloadAction<Events[]>) {
-      state.events = action.payload
-    }
-  }
+  reducers: {}
 })
 
 const { actions, reducer } = eventsSlice
 
-export const { setEvents } = actions
+export const {} = actions
 
 export default reducer

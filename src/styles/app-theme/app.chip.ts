@@ -16,20 +16,32 @@ export const MuiChip = {
       fontSize: '16px'
     },
     colorPurple: {
-      backgroundColor: palette.basic.redPink,
-      color: palette.basic.black
+      backgroundColor: palette.basic.redPinkTransparent,
+      color: palette.basic.redPink,
+      '&:hover': {
+        backgroundColor: palette.basic.redPinkHover
+      }
     },
     colorGreen: {
       backgroundColor: palette.basic.brightGreenTransparent,
-      color: palette.basic.brightGreen
+      color: palette.basic.brightGreen,
+      '&:hover': {
+        backgroundColor: palette.basic.brightGreenHover
+      }
     },
     colorYellow: {
-      backgroundColor: palette.basic.brightOrange,
-      color: palette.basic.black
+      backgroundColor: palette.basic.brightOrangeTransparent,
+      color: palette.basic.brightOrange,
+      '&:hover': {
+        backgroundColor: palette.basic.brightOrangeHover
+      }
     },
     colorBlue: {
       backgroundColor: palette.basic.lightBlueTransparent,
-      color: palette.basic.lightBlue
+      color: palette.basic.lightBlue,
+      '&:hover': {
+        backgroundColor: palette.basic.lightBlueHover
+      }
     }
   }
 }

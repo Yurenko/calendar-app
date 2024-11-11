@@ -1,0 +1,99 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 12px 0;
+}
+
+.month {
+  background-color: transparent;
+  border: none;
+
+  :global .react-calendar__month-view__days__day--weekend {
+    color: $white;
+  }
+  :global .react-calendar__month-view__days__day {
+    color: $white;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  :global .react-calendar__month-view__days__day--neighboringMonth {
+    color: $grey;
+  }
+
+  :global .react-calendar__month-view__weekdays__weekday {
+    color: $grey;
+    abbr {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+  :global .react-calendar__tile {
+    width: 52px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  :global .react-calendar__tile--now {
+    background-color: transparent;
+    abbr {
+      color: $bright-green;
+    }
+  }
+
+  :global .react-calendar__tile:disabled {
+    background-color: transparent;
+  }
+
+  :global .react-calendar__tile:enabled:hover {
+    background-color: transparent;
+    color: $bright-green;
+  }
+
+  :global .react-calendar__tile--active {
+    background-color: transparent;
+  }
+
+  :global .react-calendar__tile--active:focus {
+    background-color: transparent;
+  }
+  :global .expert {
+    background-color: $red-pink;
+  }
+
+  :global .qa {
+    background-color: $bright-green;
+  }
+
+  :global .conference {
+    background-color: $bright-orange;
+  }
+
+  :global .webinar {
+    background-color: $light-blue;
+  }
+}
+
+.eventDots {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  min-height: 6px;
+}
+
+.eventDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
