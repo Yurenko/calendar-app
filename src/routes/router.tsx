@@ -1,6 +1,5 @@
 import {
   Route,
-  Navigate,
   createBrowserRouter,
   createRoutesFromElements
 } from 'react-router-dom'
@@ -9,17 +8,12 @@ import App from '~/App'
 import Calendar from '~/pages/calendar/Calendar'
 import AppContent from '~/containers/app-content/AppContent'
 import { routes } from '~/routes/constants'
-import { errorRoutes } from '~/routes/constants/errorRoutes'
 import Events from '~/pages/events/Events'
 import Faq from '~/pages/faq/Faq'
 import Main from '~/pages/main/Main'
 
 export const routerConfig = (
-  <Route
-    element={<App />}
-    errorElement={<Navigate to={errorRoutes.badRequest.route} />}
-    path={routes.main.route}
-  >
+  <Route element={<App />} path={routes.main.route}>
     <Route element={<AppContent />}>
       <Route element={<Main />} index />
       <Route path={routes.events.route} element={<Events />} />
