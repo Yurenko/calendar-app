@@ -23,9 +23,12 @@ export const routerConfig = (
   </Route>
 )
 
+const baseUrl = process.env.NODE_ENV === 'production' ? '/calendar-app/' : '/'
+
 export const router = createBrowserRouter(
   createRoutesFromElements(routerConfig),
   {
+    basename: baseUrl,
     future: {
       v7_fetcherPersist: true,
       v7_normalizeFormMethod: true,
