@@ -48,7 +48,7 @@
   :global .react-calendar__tile--now {
     background-color: transparent;
     abbr {
-      color: $bright-green;
+      color: $red-pink;
     }
   }
 
@@ -82,6 +82,12 @@
 
   :global .webinar {
     background-color: $light-blue;
+  }
+}
+
+.selectedDay {
+  :global .react-calendar__tile--active {
+    color: $bright-green !important;
   }
 }
 

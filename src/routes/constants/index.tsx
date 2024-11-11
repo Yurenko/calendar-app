@@ -1,5 +1,5 @@
 export const routes = {
-  main: { route: '/calendar-app/', path: '/calendar-app/' },
+  main: { route: '/', path: '/' },
   events: { route: 'events', path: '/events' },
   calendar: { route: 'calendar', path: '/calendar' },
   faq: { route: 'faq', path: '/faq' }

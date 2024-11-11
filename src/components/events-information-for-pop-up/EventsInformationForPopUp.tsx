@@ -1,12 +1,13 @@
+import { FC } from 'react'
 import {
   Box,
   Button,
   Chip,
   ChipPropsColorOverrides,
   Divider,
+  Tooltip,
   Typography
 } from '@mui/material'
-import { FC } from 'react'
 
 import styles from '~/components/events-information-for-pop-up/EventsInformationForPopUp.module.scss'
 import { Events } from '~/redux/events/eventTypes'
@@ -41,12 +42,14 @@ const EventsInformationForPopUp: FC<EventsInformationForPopUpProps> = ({
                 <Typography variant='h4' className={styles.titleEvent}>
                   {event.title}
                 </Typography>
-                <Box
-                  component='img'
-                  src={Edit}
-                  alt='Edit'
-                  sx={{ cursor: 'pointer' }}
-                />
+                <Tooltip title='It will be developed in the future.' arrow>
+                  <Box
+                    component='img'
+                    src={Edit}
+                    alt='Edit'
+                    sx={{ cursor: 'pointer' }}
+                  />
+                </Tooltip>
               </Box>
               <Typography variant='body2'>{event.description}</Typography>
               <Typography variant='body1' sx={{ color: palette.basic.grey }}>
@@ -78,7 +81,9 @@ const EventsInformationForPopUp: FC<EventsInformationForPopUpProps> = ({
           </Box>
         ))}
       </Box>
-      <Button sx={{ marginLeft: 'auto' }}>Add event</Button>
+      <Tooltip title='It will be developed in the future.' arrow>
+        <Button sx={{ marginLeft: 'auto' }}>Add event</Button>
+      </Tooltip>
     </Box>
   )
 }

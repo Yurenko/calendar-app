@@ -112,16 +112,6 @@ export const mockData: MockData = {
       startTime: '11:00',
       type: 'conference'
     },
-
-    {
-      date: '2024-11-13',
-      title: 'Data Engineering Workshop',
-      description:
-        'Learn the fundamentals of data engineering, including data pipelines, ETL processes, and working with large datasets.',
-      location: 'Tech Lab, Kyiv, Ukraine',
-      startTime: '13:00',
-      type: 'webinar'
-    },
     {
       date: '2024-11-14',
       title: 'Virtual Reality in Education Symposium',
@@ -358,15 +348,6 @@ export const mockData: MockData = {
       location: 'Stereo Plaza, Kyiv, Ukraine',
       startTime: '19:00',
       type: 'conference'
-    },
-    {
-      date: '2024-12-17',
-      title: 'Training Session',
-      description:
-        'The popular indie rock band Nothing But Thieves will come to Kyiv on October 29, 2022 with a big solo concert. The British have repeatedly given cool performances at the largest Ukrainian festivals, filmed music videos in Kyiv, and now they are preparing a special show for the most loyal fans!',
-      location: 'Stereo Plaza, Kyiv, Ukraine',
-      startTime: '19:00',
-      type: 'training'
     },
     {
       date: '2024-12-18',

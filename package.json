@@ -55,5 +55,5 @@
     "@craco/craco": "^7.1.0",
     "ajv": "^7.2.4"
   },
-  "homepage": "https://yurenko.github.io/calendar-app/"
+  "homepage": "https://yurenko.github.io/"
 }
