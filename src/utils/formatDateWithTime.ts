@@ -5,7 +5,7 @@ export const formatDateWithTime = (
   const date = new Date(dateString)
 
   const day = date.getDate()
-  const month = date.toLocaleString('default', { month: 'long' }).toLowerCase()
+  const month = date.toLocaleString('en-US', { month: 'long' }).toLowerCase()
 
   return `${day} ${month}, ${timeString}`
 }
