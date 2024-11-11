@@ -1,4 +1,4 @@
-import { FC, useCallback } from 'react'
+import { useCallback } from 'react'
 import { Events } from '~/redux/events/eventTypes'
 
 interface UseFilteredEventsProps {
@@ -35,7 +35,7 @@ const useFilteredEvents = ({
       }
       return result
     },
-    [events, selectedEventTypes]
+    [events, dotIcon, selectedEventTypes]
   )
 }
 

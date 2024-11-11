@@ -1,4 +1,4 @@
-import palette from '~/styles/app-theme/app.pallete'
+import palette from '~/styles/app-theme/app.palette'
 
 export const MuiDivider = {
   styleOverrides: {

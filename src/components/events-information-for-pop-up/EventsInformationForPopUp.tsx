@@ -10,7 +10,7 @@ import { FC } from 'react'
 
 import styles from '~/components/events-information-for-pop-up/EventsInformationForPopUp.module.scss'
 import { Events } from '~/redux/events/eventTypes'
-import palette from '~/styles/app-theme/app.pallete'
+import palette from '~/styles/app-theme/app.palette'
 import { filterColors } from '~/constants/colors'
 import { eventTypes } from '~/constants/event-types'
 import Edit from '~/assets/Edit.svg'

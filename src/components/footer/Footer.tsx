@@ -4,7 +4,7 @@ import { Box, List, ListItem, Typography } from '@mui/material'
 import { navigationList } from '~/routes/constants/navigationList'
 import styles from '~/components/footer/Footer.module.scss'
 import logo from '~/assets/Logo.svg'
-import palette from '~/styles/app-theme/app.pallete'
+import palette from '~/styles/app-theme/app.palette'
 
 const Footer = () => {
   return (

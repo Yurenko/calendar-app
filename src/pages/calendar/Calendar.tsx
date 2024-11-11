@@ -9,7 +9,7 @@ import { eventTypes } from '~/constants/event-types'
 import { useAppSelector } from '~/hooks/use-redux'
 import styles from '~/pages/calendar/Calendar.module.scss'
 import { selectEventSlice } from '~/redux/events/eventSelectors'
-import palette from '~/styles/app-theme/app.pallete'
+import palette from '~/styles/app-theme/app.palette'
 import { getMonthName } from '~/utils/getMonthName'
 import { getMonthsFromCurrent } from '~/utils/getMonthsFromCurrent'
 

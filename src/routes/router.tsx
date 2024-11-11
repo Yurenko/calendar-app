@@ -21,9 +21,9 @@ export const routerConfig = (
     path={routes.main.route}
   >
     <Route element={<AppContent />}>
-      <Route path={routes.main.route} element={<Main />} />
+      <Route element={<Main />} index />
       <Route path={routes.events.route} element={<Events />} />
-      <Route element={<Calendar />} index />
+      <Route path={routes.calendar.route} element={<Calendar />} />
       <Route path={routes.faq.route} element={<Faq />} />
     </Route>
   </Route>

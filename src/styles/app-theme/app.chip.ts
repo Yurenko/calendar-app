@@ -1,4 +1,4 @@
-import palette from '~/styles/app-theme/app.pallete'
+import palette from '~/styles/app-theme/app.palette'
 
 declare module '@mui/material/Chip' {
   interface ChipPropsColorOverrides {

@@ -1,5 +1,5 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography'
-import palette from '~/styles/app-theme/app.pallete'
+import palette from '~/styles/app-theme/app.palette'
 
 const appTypography: TypographyOptions = {
   fontFamily: 'Lexend',
