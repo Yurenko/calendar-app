@@ -73,9 +73,7 @@ const Month: FC<MonthProps> = ({ monthDate, events, selectedEventTypes }) => {
         tileContent={tileContent}
         calendarType='gregory'
         showNavigation={false}
-        className={`${styles.month} ${
-          !!anchorEl ? styles.selectedDay : ''
-        }`}
+        className={`${styles.month} ${!!anchorEl ? styles.selectedDay : ''}`}
         tileDisabled={({ date, view }) =>
           view === 'month' && !isSameMonthAndYear(date, activeStartDate)
         }
@@ -86,9 +84,11 @@ const Month: FC<MonthProps> = ({ monthDate, events, selectedEventTypes }) => {
         }
       />
 
-      <EventsPopUp anchorEl={anchorEl} handleClose={handleClose}>
-        <EventsInformationForPopUp dayEvents={dayEvents} />
-      </EventsPopUp>
+      {!!anchorEl && (
+        <EventsPopUp anchorEl={anchorEl} handleClose={handleClose}>
+          <EventsInformationForPopUp dayEvents={dayEvents} />
+        </EventsPopUp>
+      )}
     </Box>
   )
 }
