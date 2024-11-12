@@ -11,24 +11,22 @@ const EventsPopUp: FC<EventsPopUpProps> = ({
   anchorEl,
   handleClose,
   children
-}) => {
-  return (
-    <Popover
-      open={Boolean(anchorEl)}
-      anchorEl={anchorEl}
-      onClose={handleClose}
-      anchorOrigin={{
-        vertical: 'bottom',
-        horizontal: 'center'
-      }}
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'center'
-      }}
-    >
-      {children}
-    </Popover>
-  )
-}
+}) => (
+  <Popover
+    open={Boolean(anchorEl)}
+    anchorEl={anchorEl}
+    onClose={handleClose}
+    anchorOrigin={{
+      vertical: 'bottom',
+      horizontal: 'right'
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'left'
+    }}
+  >
+    {children}
+  </Popover>
+)
 
 export default EventsPopUp
